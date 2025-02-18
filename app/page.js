@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Datafetch from "./components/Datafetch";
 import Card from "./components/Card";
+import ToggelBtn from "./components/ToggelBtn";
 
 export default function Home() {
   //Hold City Name That send as prop to <Datafetch />
@@ -30,8 +31,9 @@ export default function Home() {
 
   return (
     <div>
+      <ToggelBtn/>
       <div className="flex flex-col items-center justify-center min-h-screen bg-foreground">
-        <h1 className="text-4xl font-bold mb-4 text-blue-900">Weather App</h1>
+        <h1 className="text-4xl font-bold mb-4 text-background">Weather App</h1>
         <div className="flex ">
           {data.map((data, index) => (
             <Card
