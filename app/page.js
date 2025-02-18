@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Datafetch from "./components/Datafetch";
 import Card from "./components/Card";
+import SplashCursor from "./components/CursorAnim";
 
 export default function Home() {
   //Hold City Name That send as prop to <Datafetch />
@@ -30,6 +31,7 @@ export default function Home() {
 
   return (
     <div>
+      <SplashCursor/>
       <div className="flex flex-col items-center justify-center min-h-screen bg-foreground">
         <h1 className="text-4xl font-bold mb-4 text-blue-900">Weather App</h1>
         <div className="flex ">
